@@ -1,5 +1,5 @@
 const Eris = require("eris");
-const Roger = require("Roger");
+const Roger = require("roger");
 const keep_alive = require('./keep_alive.js')
 
 // Replace TOKEN with your bot account's token

@@ -5,14 +5,12 @@ const fs = require('fs');
 const path = require('path');
 
 const client1 = new Client({
-const client = new Client({
-  intents: Object.values(GatewayIntentBits),
-});
+intents: Object.values(GatewayIntentBits),
+
 });
 const client2 = new Client({
-const client = new Client({
+
   intents: Object.values(GatewayIntentBits),
-});
 });
 const app = express();
 const port = 3000;

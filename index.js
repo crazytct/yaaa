@@ -5,13 +5,22 @@ const fs = require('fs');
 const path = require('path');
 
 const client1 = new Client({
-intents: Object.values(GatewayIntentBits)
-
+ intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.DirectMessages,
+    // Add any other intents you need
+  ],
 
 });
 const client2 = new Client({
 
-  intents: Object.values(GatewayIntentBits)
+ intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.DirectMessages,
+    // Add any other intents you need
+  ],
 
   
 });
